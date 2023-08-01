@@ -12,6 +12,11 @@ public abstract class ModelStore implements IModelChanger, IModelChangedObserver
     public Camera Cameras;
     private IModelChangedObserver changedObservers;
 
+    // сделаем геттер, чтобы у 'changedObservers' не было варнинга
+    public IModelChangedObserver getChangedObservers() {
+        return changedObservers;
+    }
+
     public Scene getScena(int id) {
         // чтобы меньше ругался редактор - объявим и инициализируем 'temp'
         Scene temp = null;
