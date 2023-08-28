@@ -4,5 +4,9 @@ temp.java
 # скриншоты
 /Images
 
-# семинары
-Seminar*
+# скомпилированные Class файлы
+*.class
+
+# файлы IntelliJ IDEA
+.idea/
+Homework09/.gitignore
